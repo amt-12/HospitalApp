@@ -1,0 +1,157 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/obj/Debug/net8.0/scopedcss/projectbundle/HospitalApp.bundle.scp.css",
+      "PackagePath": "staticwebassets/HospitalApp.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/Doc-1.jpg",
+      "PackagePath": "staticwebassets/assets/Doc-1.jpg"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/Doc-2.jpg",
+      "PackagePath": "staticwebassets/assets/Doc-2.jpg"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/Doc-3.jpg",
+      "PackagePath": "staticwebassets/assets/Doc-3.jpg"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/Doc-5.jpg",
+      "PackagePath": "staticwebassets/assets/Doc-5.jpg"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/Doctorsbro.png",
+      "PackagePath": "staticwebassets/assets/Doctorsbro.png"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/Gastroenterology.png",
+      "PackagePath": "staticwebassets/assets/Gastroenterology.png"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/Hospital bed-bro.png",
+      "PackagePath": "staticwebassets/assets/Hospital bed-bro.png"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/Hospitalbed.png",
+      "PackagePath": "staticwebassets/assets/Hospitalbed.png"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/admin.png",
+      "PackagePath": "staticwebassets/assets/admin.png"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/ambulance.png",
+      "PackagePath": "staticwebassets/assets/ambulance.png"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/blog-3.jpg",
+      "PackagePath": "staticwebassets/assets/blog-3.jpg"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/cancer-ribbon.png",
+      "PackagePath": "staticwebassets/assets/cancer-ribbon.png"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/cardiogram.png",
+      "PackagePath": "staticwebassets/assets/cardiogram.png"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/doctor.png",
+      "PackagePath": "staticwebassets/assets/doctor.png"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/drug.png",
+      "PackagePath": "staticwebassets/assets/drug.png"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/eye.png",
+      "PackagePath": "staticwebassets/assets/eye.png"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/eye1.png",
+      "PackagePath": "staticwebassets/assets/eye1.png"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/handshake.png",
+      "PackagePath": "staticwebassets/assets/handshake.png"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/health-check.png",
+      "PackagePath": "staticwebassets/assets/health-check.png"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/heart.png",
+      "PackagePath": "staticwebassets/assets/heart.png"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/hospital-bed.png",
+      "PackagePath": "staticwebassets/assets/hospital-bed.png"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/hospital1.png",
+      "PackagePath": "staticwebassets/assets/hospital1.png"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/injury.svg",
+      "PackagePath": "staticwebassets/assets/injury.svg"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/liver.png",
+      "PackagePath": "staticwebassets/assets/liver.png"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/logoHospital.png",
+      "PackagePath": "staticwebassets/assets/logoHospital.png"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/neuroscience.png",
+      "PackagePath": "staticwebassets/assets/neuroscience.png"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/next.png",
+      "PackagePath": "staticwebassets/assets/next.png"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/orthopedics.png",
+      "PackagePath": "staticwebassets/assets/orthopedics.png"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/assets/target.png",
+      "PackagePath": "staticwebassets/assets/target.png"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.HospitalApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.HospitalApp.props",
+      "PackagePath": "build\\HospitalApp.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.HospitalApp.props",
+      "PackagePath": "buildMultiTargeting\\HospitalApp.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.HospitalApp.props",
+      "PackagePath": "buildTransitive\\HospitalApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

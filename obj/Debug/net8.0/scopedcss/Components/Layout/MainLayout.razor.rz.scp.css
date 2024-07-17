@@ -1,0 +1,79 @@
+.nav[b-olrh6lh5na] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0; 
+    background-color: white;
+
+    z-index: 999;
+}
+.footer[b-olrh6lh5na]{
+    background: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    padding-left: 14rem;
+    padding-right: 8rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+}
+.fcontent[b-olrh6lh5na]{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    line-height: 30px;
+}
+.hcontent[b-olrh6lh5na]{
+    font-weight: 600;
+    font-size: 35px;
+}
+.flink[b-olrh6lh5na]{
+    color: black; 
+    text-decoration:none;
+    font-size: 18px;
+
+}
+.sub[b-olrh6lh5na]{
+display: flex;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+}
+.medicare[b-olrh6lh5na]{
+text-shadow: 0 1px 1px black;
+padding: 1rem;
+color: rgba(8, 146, 109, 0.982);
+}
+.navimg[b-olrh6lh5na]{
+height: 70px;
+width: 70px;
+}
+.nav-link:hover[b-olrh6lh5na] {
+color: rgba(8, 146, 109, 0.982);
+font-weight: 500;
+text-decoration: none;
+font-size: 18px;
+}
+.btn-book[b-olrh6lh5na]{
+
+}
+.box[b-olrh6lh5na]{
+    border: 5px solid lightgreen;
+    background: #fff;
+    text-align: center;
+    padding: 3rem;
+    border-radius: 25px;
+}
+.text[b-olrh6lh5na]{
+    padding-top: .5rem;
+    font-size: 25px;
+    padding-bottom: 1rem;
+
+}

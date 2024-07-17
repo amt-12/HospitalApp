@@ -1,0 +1,63 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page">
+    @* <div class="sidebar">
+    <NavMenu />
+    </div> *@
+
+    <main>
+        <div class="nav">
+            <div class="sub">
+                <img src="/assets/logoHospital.png" alt="Description of Image" class="navimg" />
+                <h2 class="medicare">MEDICARE</h2>
+            </div>
+
+            <a href="/" class="nav-link">Home</a> <a href="/specialities" class="nav-link">Specialities</a>
+            <a href="/doctors" class="nav-link">Doctors</a>
+            <a href="/login" class="nav-link">Login</a>
+
+            <a href="/SignUp" class="nav-link">Sign Up</a>
+            <a href="/Book-Appointment" class="nav-link">Book Appointment</a>
+            <a href="/about" class="nav-link">About</a>
+        </div>
+
+        <article class="" >
+            @Body
+        </article>
+        <div class="footer">
+            <div class="fcontent">
+                <h3 class="hcontent">Quick Links</h3>
+                <a href="/" class="flink"><img src="/assets/next.png" width="5%"> Home</a>
+                <a href="/specialities" class="flink"><img src="/assets/next.png" width="5%">Specialities</a>
+                <a href="/doctors" class="flink"><img src="/assets/next.png" width="5%"> Doctors</a>
+                <a href="/login" class="flink"><img src="/assets/next.png" width="5%"> Login</a>
+                <a href="/SignUp" class="flink"><img src="/assets/next.png" width="5%"> Sign Up</a>
+                <a href="/Book-Appointment" class="flink"><img src="/assets/next.png" width="5%"> Book Appointment</a>
+                <a href="/about" class="flink"><img src="/assets/next.png" width="5%"> About</a>
+            </div>
+            <div class="fcontent">
+                <h3 class="hcontent">Our Services</h3>
+                <a href="/" class="flink"><img src="/assets/next.png" width="5%">Free Checkups</a>
+                <a href="/" class="flink"><img src="/assets/next.png" width="5%"> 54/7 Ambulance</a>
+                <a href="/" class="flink"><img src="/assets/next.png" width="5%"> Expert Doctors</a>
+                <a href="/" class="flink"><img src="/assets/next.png" width="5%"> Medicines</a>
+                <a href="/" class="flink"><img src="/assets/next.png" width="5%"> Bed Facility</a>
+                <a href="/" class="flink"><img src="/assets/next.png" width="5%"> Total Care</a>
+            </div>
+            <div class="fcontent">
+                <h3 class="hcontent">Contact Info</h3>
+                <p class="flink"><img src="/assets/next.png" width="5%">+12345677890</p>
+                <p class="flink"><img src="/assets/next.png" width="5%">+12345677890</p>
+            </div>
+        </div>
+    </main>
+</div>
+<div>
+    @* <script>
+        document.querySelectorAll('.flink').forEach(link => {
+            link.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script> *@
+</div>

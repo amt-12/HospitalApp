@@ -1,0 +1,66 @@
+@page "/SignUp"
+@rendermode InteractiveServer
+
+<PageTitle>Login</PageTitle>
+
+ <div class="container" style="padding-top: 6rem;">
+
+        <div class="logo">
+            <img src="/assets/admin.png" class="logo" width="50%">
+        </div>
+
+       <div class="formhome">
+                    <p style="font-size: 20px; font-weight:600">Sign Up</p>
+                    <form style="font-semibold">
+                        <input type="text" id="firstname" firstname="firstname" placeholder="First Name" class="apointInput"><br><br>
+                        <input type="text" id="lastname" firstname="lastname" placeholder="Last Name" class="apointInput"><br><br>
+                        <input type="email" id="email" name="email" placeholder="Email" class="apointInput"><br><br>
+                        <input type="text" id="username" name="username" placeholder="Username" class="apointInput"><br><br>
+
+                        <input type="password" id="password" name="password" placeholder="Password" class="apointInput"><br><br>
+
+                        <input type="submit" value="Sign Up" class="apointInput">
+                           <div id="error-message" style="color: red;"></div>
+            <div id="success-message" style="color: green;"></div>
+                    </form>
+                </div>
+
+    </div>
+    <script>
+    const submitButton = document.querySelector('input[type="submit"]');
+
+    submitButton.addEventListener('click', async (e) => {
+        e.preventDefault();
+
+        const firstname = document.querySelector('#firstname').value;
+        const lastname = document.querySelector('#lastname').value;
+        const email = document.querySelector('#email').value;
+        const username = document.querySelector('#username').value;
+        const password = document.querySelector('#password').value;
+
+        const userData = { firstname, lastname, email, username, password };
+
+        try {
+            const response = await fetch('http://localhost:5126/signup', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(userData)
+            });
+
+            const result = await response.json();
+
+              if (response.ok) {
+                const successMessage = document.querySelector('#success-message');
+                successMessage.textContent = `Success: ${result?.message}`;
+                console.log(result); // User created successfully
+            } else {
+                const errorMessage = document.querySelector('#error-message');
+                errorMessage.textContent = `Error: ${result?.message}`;
+            }
+        } catch (error) {
+            const errorMessage = document.querySelector('#error-message');
+            errorMessage.textContent = `Error: ${error.message}`;
+        }
+    }
+    }
+</script>

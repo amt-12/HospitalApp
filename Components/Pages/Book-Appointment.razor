@@ -1,0 +1,72 @@
+@page "/Book-Appointment"
+@rendermode InteractiveServer
+
+<PageTitle>Book Appointment</PageTitle>
+
+<div class="container" style="padding-top: 6rem;">
+
+    <div class="logo">
+        <img src="/assets/admin.png" class="logo" width="50%">
+    </div>
+
+    <div class="formhome">
+        <p style="font-size: 20px; font-weight:600">Book Appointment</p>
+        <form class="font-semibold" onsubmit="handleBookSubmit(event)">
+            <input type="text" id="name" name="name" placeholder="Full Name" class="apointInput"><br><br>
+
+            <input type="age" id="age" name="age" placeholder="Age" class="apointInput"><br><br>
+
+            <input type="phone" id="phone" name="phone" placeholder="Phone Number" class="apointInput"><br><br>
+
+            <input type="email" id="email" name="email" placeholder="Email" class="apointInput"><br><br>
+            <input type="date" id="appointmentDate" name="appointmentDate" placeholder="Appointment Date" class="apointInput"><br><br>
+
+            <textarea id="reason" name="reason" placeholder="Reason for Appointment"
+                class="apointInput"></textarea><br><br>
+
+            <button id="submit-btn">Submit</button>
+                <div id="error-message" style="color: red;"></div>
+            <div id="success-message" style="color: green;"></div>
+        </form>
+    </div>
+
+
+</div>
+<script>
+    async function handleBookSubmit(event) {
+        event.preventDefault();
+
+        const name = document.querySelector('#name').value;
+        const age = document.querySelector('#age').value;
+        const phone = document.querySelector('#phone').value;
+        const email = document.querySelector('#email').value;
+        @* const appointmentDate = document.querySelector('#appointmentDate').value; *@
+        const reason = document.querySelector('#reason').value;
+
+        const appointmentData = { name, email,reason,age,phone };
+
+        try {
+            const response = await fetch('http://localhost:5126/bookAppointment', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(appointmentData)
+            });
+
+            const result = await response.json();
+
+            if (response.ok) {
+                const successMessage = document.querySelector('#success-message');
+                successMessage.textContent = `Success: ${result?.message}`;
+                console.log(result); // User created successfully
+            } else {
+                const errorMessage = document.querySelector('#error-message');
+                errorMessage.textContent = `Error: ${result?.message}`;
+            }
+        } catch (error) {
+            const errorMessage = document.querySelector('#error-message');
+            errorMessage.textContent = `Error: ${error.message}`;
+        }
+    }
+    }
+
+</script>
