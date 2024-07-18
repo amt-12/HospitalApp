@@ -61,11 +61,11 @@
                 console.log(result); // User created successfully
             } else {
                 const errorMessage = document.querySelector('#error-message');
-                errorMessage.textContent = `Error: ${result?.message}`;
+                errorMessage.textContent = `Error: ${result?.error}`;
             }
         } catch (error) {
             const errorMessage = document.querySelector('#error-message');
-            errorMessage.textContent = `Error: ${error.message}`;
+            errorMessage.textContent = `Error: ${error}`;
         }
     }
     }

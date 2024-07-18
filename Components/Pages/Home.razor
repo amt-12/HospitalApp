@@ -123,26 +123,28 @@
                     <img src="/assets/injury.svg" alt="Description of Image" class="injuryimg" />
                 </div>
                 <div class="formhome">
-        <p style="font-size: 20px; font-weight:600">Book Appointment</p>
-        <form class="font-semibold" onsubmit="handleBookSubmit1(event)">
-            <input type="name" id="name" name="name" placeholder="Full Name" class="apointInput"><br><br>
+                    <p style="font-size: 20px; font-weight:600">Book Appointment</p>
+                    <form class="font-semibold" onsubmit="handleBookSubmit1(event)">
+                        <input type="name" id="name" name="name" placeholder="Full Name" class="apointInput"><br><br>
 
-            <input type="age" id="age" name="age" placeholder="Age" class="apointInput"><br><br>
+                        <input type="age" id="age" name="age" placeholder="Age" class="apointInput"><br><br>
 
-            <input type="phone" id="phone" name="phone" placeholder="Phone Number" class="appointInput"><br><br>
+                        <input type="phone" id="phone" name="phone" placeholder="Phone Number"
+                            class="appointInput"><br><br>
 
-            <input type="email" id="email" name="email" placeholder="Email" class="appointInput"><br><br>
+                        <input type="email" id="email" name="email" placeholder="Email" class="appointInput"><br><br>
 
-            <input type="date" id="date" name="date" placeholder="Appointment Date" class="appointInput"><br><br>
+                        <input type="date" id="date" name="date" placeholder="Appointment Date"
+                            class="appointInput"><br><br>
 
-            <textarea id="reason" name="reason" placeholder="Reason for Appointment"
-                class="apointInput"></textarea><br><br>
+                        <textarea id="reason" name="reason" placeholder="Reason for Appointment"
+                            class="apointInput"></textarea><br><br>
 
-            <button id="submit-btn"  class="apointInput">Submit</button>
-               <div id="error-message" style="color: red;"></div>
-            <div id="success-message" style="color: green;"></div>
-        </form>
-    </div>
+                        <button id="submit-btn" class="apointInput">Book</button>
+                        <div id="error-message" style="color: red;"></div>
+                        <div id="success-message" style="color: green;"></div>
+                    </form>
+                </div>
             </div>
 
         </div>
@@ -159,10 +161,10 @@
         const age = document.querySelector('#age').value;
         const phone = document.querySelector('#phone').value;
         const email = document.querySelector('#email').value;
-        @* const appointmentDate = document.querySelector('#appointmentDate').value; *@
+    @* const appointmentDate = document.querySelector('#appointmentDate').value; *@
         const reason = document.querySelector('#reason').value;
 
-        const appointmentData = { name, email,reason,age,phone };
+        const appointmentData = { name, email, reason, age, phone };
 
         try {
             const response = await fetch('http://localhost:5126/bookAppointment', {
@@ -172,18 +174,18 @@
             });
 
             const result = await response.json();
-
+            console.log(result?.error)
             if (response.ok) {
                 const successMessage = document.querySelector('#success-message');
                 successMessage.textContent = `Success: ${result?.message}`;
                 console.log(result); // User created successfully
             } else {
                 const errorMessage = document.querySelector('#error-message');
-                errorMessage.textContent = `Error: ${result?.message}`;
+                errorMessage.textContent = `Error: ${result?.error}`;
             }
         } catch (error) {
             const errorMessage = document.querySelector('#error-message');
-            errorMessage.textContent = `Error: ${error.message}`;
+            errorMessage.textContent = `Error: ${result?.error}`;
         }
     }
 
