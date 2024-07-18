@@ -5,7 +5,9 @@
     <NavMenu />
     </div> *@
 
+
     <main>
+
         <div class="nav">
             <div class="sub">
                 <img src="/assets/logoHospital.png" alt="Description of Image" class="navimg" />
@@ -14,14 +16,13 @@
 
             <a href="/" class="nav-link">Home</a> <a href="/specialities" class="nav-link">Specialities</a>
             <a href="/doctors" class="nav-link">Doctors</a>
-            <a href="/login" class="nav-link">Login</a>
-
+            <a id="login-link" href="/login" class="nav-link">Login</a>
             <a href="/SignUp" class="nav-link">Sign Up</a>
             <a href="/Book-Appointment" class="nav-link">Book Appointment</a>
             <a href="/about" class="nav-link">About</a>
         </div>
 
-        <article class="" >
+        <article class="">
             @Body
         </article>
         <div class="footer">
@@ -53,11 +54,21 @@
     </main>
 </div>
 <div>
-    @* <script>
-        document.querySelectorAll('.flink').forEach(link => {
-            link.addEventListener('click', () => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
+   <script>
+    document.querySelectorAll('.flink').forEach(link => {
+        link.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
-    </script> *@
+    });
+
+    const email = localStorage.getItem('email');
+    if (email) {
+        @* document.getElementById('login-link').href = '/logout'; *@
+        document.getElementById('login-link').textContent = 'Logout';
+
+        document.getElementById('login-link').addEventListener('click', () => {
+            localStorage.removeItem('email');
+        });
+    }
+</script>
 </div>

@@ -21,8 +21,8 @@
             <input type="password" id="password" name="password" placeholder="Password" class="apointInput"><br><br>
 
             <input type="submit" value="Sign Up" class="apointInput">
-            <div id="error-message" style="color: red;"></div>
-            <div id="success-message" style="color: green;"></div>
+            <div id="error-message" style="color: red; margin:10px"></div>
+            <div id="success-message" style="color: green;  margin:10px"></div>
         </form>
     </div>
 
@@ -50,7 +50,9 @@
             if (response.ok) {
                 const successMessage = document.querySelector('#success-message');
                 successMessage.textContent = `Success: ${result?.message}`;
-                console.log(result); // User created successfully
+                console.log(result); 
+                window.location.href = '/login';
+
             } else {
                 const errorMessage = document.querySelector('#error-message');
                 errorMessage.textContent = `Error: ${result?.message}`;
@@ -60,5 +62,5 @@
             errorMessage.textContent = `Error: ${error.message}`;
         }
     }
-    
+
 </script>
