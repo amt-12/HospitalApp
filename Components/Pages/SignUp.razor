@@ -3,35 +3,33 @@
 
 <PageTitle>Login</PageTitle>
 
- <div class="container" style="padding-top: 6rem;">
+<div class="container" style="padding-top: 6rem;">
 
-        <div class="logo">
-            <img src="/assets/admin.png" class="logo" width="50%">
-        </div>
-
-       <div class="formhome">
-                    <p style="font-size: 20px; font-weight:600">Sign Up</p>
-                    <form style="font-semibold">
-                        <input type="text" id="firstname" firstname="firstname" placeholder="First Name" class="apointInput"><br><br>
-                        <input type="text" id="lastname" firstname="lastname" placeholder="Last Name" class="apointInput"><br><br>
-                        <input type="email" id="email" name="email" placeholder="Email" class="apointInput"><br><br>
-                        <input type="text" id="username" name="username" placeholder="Username" class="apointInput"><br><br>
-
-                        <input type="password" id="password" name="password" placeholder="Password" class="apointInput"><br><br>
-
-                        <input type="submit" value="Sign Up" class="apointInput">
-                           <div id="error-message" style="color: red;"></div>
-            <div id="success-message" style="color: green;"></div>
-                    </form>
-                </div>
-
+    <div class="logo">
+        <img src="/assets/admin.png" class="logo" width="50%">
     </div>
-    <script>
-    const submitButton = document.querySelector('input[type="submit"]');
 
-    submitButton.addEventListener('click', async (e) => {
-        e.preventDefault();
+    <div class="formhome">
+        <p style="font-size: 20px; font-weight:600">Sign Up</p>
+        <form style="font-semibold" onsubmit="handleSubmit2(event)">
+            <input type="text" id="firstname" firstname="firstname" placeholder="First Name"
+                class="apointInput"><br><br>
+            <input type="text" id="lastname" firstname="lastname" placeholder="Last Name" class="apointInput"><br><br>
+            <input type="email" id="email" name="email" placeholder="Email" class="apointInput"><br><br>
+            <input type="text" id="username" name="username" placeholder="Username" class="apointInput"><br><br>
 
+            <input type="password" id="password" name="password" placeholder="Password" class="apointInput"><br><br>
+
+            <input type="submit" value="Sign Up" class="apointInput">
+            <div id="error-message" style="color: red;"></div>
+            <div id="success-message" style="color: green;"></div>
+        </form>
+    </div>
+
+</div>
+<script>
+    async function handleSubmit2(event) {
+        event.preventDefault();
         const firstname = document.querySelector('#firstname').value;
         const lastname = document.querySelector('#lastname').value;
         const email = document.querySelector('#email').value;
@@ -49,7 +47,7 @@
 
             const result = await response.json();
 
-              if (response.ok) {
+            if (response.ok) {
                 const successMessage = document.querySelector('#success-message');
                 successMessage.textContent = `Success: ${result?.message}`;
                 console.log(result); // User created successfully
@@ -62,5 +60,5 @@
             errorMessage.textContent = `Error: ${error.message}`;
         }
     }
-    }
+    
 </script>

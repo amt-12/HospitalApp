@@ -77,3 +77,4 @@
 /Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/bin/Debug/net8.0/runtimes/linux/native/libmongocrypt.so
 /Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/bin/Debug/net8.0/runtimes/osx/native/libmongocrypt.dylib
 /Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/bin/Debug/net8.0/runtimes/win/native/mongocrypt.dll
+/Users/amritpalsingh/Desktop/Projects/Hotel/HospitalApp/obj/Debug/net8.0/HospitalApp.sourcelink.json
